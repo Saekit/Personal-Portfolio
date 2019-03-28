@@ -2,19 +2,27 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { Route, Switch, withRouter } from 'react-router-dom';
+import { bindActionCreators } from 'redux'
 import ProjectsContainer from './containers/ProjectsContainers'
 import HobbiesContainer from './containers/HobbiesContainer'
 import Home from './containers/Home'
+import { getProjects } from './actions/projectActions'
 
 
 class App extends Component {
+
+  componentDidMount(){
+    this.props.getProjects()
+  }
+
+
   render() {
     return (
       <div className="App">
         <Switch>
           <Route
             path="/projects"
-            component={ProjectsContainer}
+            render={() => <ProjectsContainer projects={this.props.projects}/>}
           />
           <Route
             path="/hobbies"
@@ -29,5 +37,16 @@ class App extends Component {
     );
   }
 }
+function mapStateToProps(state){
+  return {
+    projects: state.projects
+  }
+}
 
-export default withRouter(App);
+function mapDispatchToProps(dispatch) {
+  return {
+    getProjects: bindActionCreators(getProjects, dispatch)
+  }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

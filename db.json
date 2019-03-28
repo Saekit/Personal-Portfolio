@@ -1,0 +1,65 @@
+{
+  "projects" : [
+    {
+      "id": 1,
+      "project_name": "Biome Atlas",
+      "about": "About section for Biome Atlas...",
+      "video": "link to youtube video",
+      "live": "link to live demo",
+      "github": "link to github repo"
+    },
+    {
+      "id": 2,
+      "project_name": "Playlister",
+      "about": "About section for Playlister...",
+      "video": "link to youtube video",
+      "live": "link to live demo",
+      "github": "link to github repo"
+    },
+    {
+      "id": 3,
+      "project_name": "StoryBook Maker",
+      "about": "About section...",
+      "video": "link to youtube video",
+      "live": "link to live demo",
+      "github": "link to github repo"
+    },
+    {
+      "id": 4,
+      "project_name": "Dog Walker",
+      "about": "About section...",
+      "video": "link to youtube video",
+      "live": "link to live demo",
+      "github": "link to github repo"
+    },
+    {
+      "id": 5,
+      "project_name": "What Should I Wear Today",
+      "about": "About section...",
+      "video": "link to youtube video",
+      "live": "link to live demo",
+      "github": "link to github repo"
+    }
+  ],
+  "hobbies" : [
+    {
+      "id": 1,
+      "hobby_name": "Travel",
+      "about": "About section...",
+      "img": "img",
+    },
+    {
+      "id": 2,
+      "hobby_name": "Crochet",
+      "about": "About section...",
+      "img": "img",
+    },
+    {
+      "id": 3,
+      "hobby_name": "Fantasy",
+      "about": "About section...",
+      "img": "img",
+    }
+  ]
+
+}
