@@ -4,41 +4,41 @@
       "id": 1,
       "project_name": "Biome Atlas",
       "about": "About section for Biome Atlas...",
-      "video": "link to youtube video",
-      "live": "link to live demo",
-      "github": "link to github repo"
+      "video": "https://youtu.be/0NBABLy1rEE",
+      "live": "https://biome-atlas.netlify.com",
+      "github": "https://github.com/Saekit/Mod-5-Project-Biome-Atlas-Frontend"
     },
     {
       "id": 2,
       "project_name": "Playlister",
       "about": "About section for Playlister...",
-      "video": "link to youtube video",
-      "live": "link to live demo",
-      "github": "link to github repo"
+      "video": "https://youtu.be/xh2VugsQukk",
+      "live": null,
+      "github": "https://github.com/Saekit/Mod-4-Project-Music-App"
     },
     {
       "id": 3,
       "project_name": "StoryBook Maker",
       "about": "About section...",
-      "video": "link to youtube video",
-      "live": "link to live demo",
-      "github": "link to github repo"
+      "video": "https://youtu.be/ciGhzl1E2-Y",
+      "live": null,
+      "github": "https://github.com/Saekit/Mod-3-Project-Storybook-Maker"
     },
     {
       "id": 4,
       "project_name": "Dog Walker",
       "about": "About section...",
-      "video": "link to youtube video",
-      "live": "link to live demo",
-      "github": "link to github repo"
+      "video": "https://youtu.be/bqGjV5hzfRQ",
+      "live": null,
+      "github": "https://github.com/Saekit/Dog-Walking-App"
     },
     {
       "id": 5,
       "project_name": "What Should I Wear Today",
       "about": "About section...",
-      "video": "link to youtube video",
-      "live": "link to live demo",
-      "github": "link to github repo"
+      "video": "https://youtu.be/zUZNdd8Qd8g",
+      "live": null,
+      "github": "https://github.com/Saekit/module-one-final-project-guidelines-dumbo-web-102918"
     }
   ],
   "hobbies" : [
@@ -46,19 +46,29 @@
       "id": 1,
       "hobby_name": "Travel",
       "about": "About section...",
-      "img": "img",
+      "img1": "img",
+      "img2": "img"
     },
     {
       "id": 2,
       "hobby_name": "Crochet",
       "about": "About section...",
-      "img": "img",
+      "img1": "img",
+      "img2": "img"
     },
     {
       "id": 3,
       "hobby_name": "Fantasy",
       "about": "About section...",
-      "img": "img",
+      "img1": "img",
+      "img2": "img"
+    },
+    {
+      "id": 4,
+      "hobby_name": "Food",
+      "about": "About section...",
+      "img1": "img",
+      "img2": "img"
     }
   ]
 
