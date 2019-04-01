@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import Footer from '../components/Footer'
 import { Link } from 'react-router-dom';
 
 class Home extends Component {
   render() {
     return(
-      <div>
-        <div>
-          <div>
+      <div className='home-container'>
+        <div className='home-items'>
             <h1>Raquel Randall</h1>
             <img className="selfie" src="/images/portfolio-pic.jpg" alt="selfie" />
             <h2>Full Stack Web Developer</h2>
@@ -22,17 +20,6 @@ class Home extends Component {
               <li>Went to a university in California</li>
               <li>Grew up on Oahu, Hawaii</li>
             </ul>
-          </div>
-          <div>
-            <br />
-            <Link to={'/projects'}>
-              <button>Check out my projects</button>
-            </Link>
-            <Link to={'/hobbies'}>
-              <button>Check out my hobbies</button>
-            </Link>
-          </div>
-          <Footer />
         </div>
       </div>
     )
