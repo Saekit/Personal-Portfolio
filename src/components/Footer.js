@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 const Footer = () => {
   return(
+    <footer>
     <div>
       <ul className='footer'>
           <li><a href='#'>GitHub</a></li>
@@ -12,6 +13,7 @@ const Footer = () => {
           <li><a href='#'>Instagram</a></li>
       </ul>
     </div>
+    </footer>
   )
 }
 export default Footer

@@ -9,6 +9,7 @@ import { getProjects } from './actions/projectActions'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import About from './components/About'
+import Contact from './components/Contact'
 
 
 class App extends Component {
@@ -33,6 +34,10 @@ class App extends Component {
                   <ProjectsContainer
                     projects={this.props.projects}
                   />}
+              />
+              <Route
+                path="/contact"
+                component={Contact}
               />
               <Route
                 path='/about'

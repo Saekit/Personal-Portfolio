@@ -1,8 +1,14 @@
+html, body {
+  height: 100%;
+}
+
 .App {
   /* text-align: center; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-bottom: -142px;
+  position: relative;
 }
 /*
 .App-logo {
@@ -48,10 +54,14 @@
   height: 0;
   visibility: hidden;
 } */
-
+.Content {
+  padding-bottom: 2.5rem;
+}
 .selfie {
   height: auto;
   width: 200px;
+  border: solid 2px green;
+  border-radius: 10%;
 }
 .footer {
   list-style: none;
@@ -59,14 +69,25 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-color: #F8F8F8;
-  border-top: 1px solid #E7E7E7;
+  /* background-color: #F8F8F8; */
+  /* border-top: 1px solid #E7E7E7; */
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 2.5rem;
+  background: url("https://images.pexels.com/photos/296884/pexels-photo-296884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  border-top: 4px solid green;
 }
+.App:after {
+  content: "";
+  display: block;
+}
+
 .footer a {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: black;
+  color: white;
 }
 
 .navbar {
@@ -75,17 +96,20 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  background: #F8F8F8;
+  background: url("https://images.pexels.com/photos/296884/pexels-photo-296884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   padding: 10px;
+  border-bottom: 4px solid green;
+
 }
 .navbar a {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: black;
+  color: white;
 }
 .navbar a:hover {
-  background: darken(#F8F8F8, 2%);
+  border-radius: 10%;
+  background: rgba(0, 136, 0, 0.5);
 }
 
 /* For Medium Screens*/
@@ -95,6 +119,10 @@
   }
   .footer {
     justify-content: space-around;
+  }
+  .navbar a:hover {
+    background: rgba(255, 0, 0, 0.5);
+    border-bottom: none;
   }
 }
 
@@ -114,6 +142,10 @@
   .navbar li:last-of-type a {
     border-bottom: none;
   }
+  .navbar a:hover {
+    background: rgba(255, 0, 0, 0.5);
+    border-bottom: none;
+  }
 
   .footer {
     flex-direction: column;
@@ -129,11 +161,24 @@
   .footer li:last-of-type a {
     border-bottom: none;
   }
+  .home-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .home-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.home-items {
-  order: 1;
+.home-profile {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+.home-bio {
+  flex: 1;
+  text-align: left;
+
 }
