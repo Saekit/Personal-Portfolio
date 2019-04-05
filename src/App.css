@@ -9,6 +9,7 @@ html, body {
   min-height: 100vh;
   margin-bottom: -142px;
   position: relative;
+  background: url("https://images.pexels.com/photos/1050294/pexels-photo-1050294.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")
 }
 /*
 .App-logo {
@@ -57,12 +58,7 @@ html, body {
 .Content {
   padding-bottom: 2.5rem;
 }
-.selfie {
-  height: auto;
-  width: 200px;
-  border: solid 2px #805515;
-  border-radius: 10%;
-}
+
 .footer {
   list-style: none;
   margin: 0;
@@ -186,6 +182,12 @@ html, body {
   font-family: 'Dancing Script', cursive;
   font-size: 8vh;
   color: #553300;
+}
+.selfie {
+  height: auto;
+  width: 200px;
+  border: solid 2px #805515;
+  border-radius: 10%;
 }
 .home-bio {
   flex: 1;

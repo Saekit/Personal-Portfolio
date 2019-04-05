@@ -4,7 +4,7 @@
       "id": 1,
       "project_name": "Biome Atlas",
       "about": "About section for Biome Atlas...",
-      "video": "https://youtu.be/0NBABLy1rEE",
+      "video": "https://www.youtube.com/embed/0NBABLy1rEE",
       "live": "https://biome-atlas.netlify.com",
       "github": "https://github.com/Saekit/Mod-5-Project-Biome-Atlas-Frontend"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "project_name": "Playlister",
       "about": "About section for Playlister...",
-      "video": "https://youtu.be/xh2VugsQukk",
+      "video": "https://www.youtube.com/embed/xh2VugsQukk",
       "live": null,
       "github": "https://github.com/Saekit/Mod-4-Project-Music-App"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "project_name": "StoryBook Maker",
       "about": "About section...",
-      "video": "https://youtu.be/ciGhzl1E2-Y",
+      "video": "https://www.youtube.com/embed/ciGhzl1E2-Y",
       "live": null,
       "github": "https://github.com/Saekit/Mod-3-Project-Storybook-Maker"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "project_name": "Dog Walker",
       "about": "About section...",
-      "video": "https://youtu.be/bqGjV5hzfRQ",
+      "video": "https://www.youtube.com/embed/bqGjV5hzfRQ",
       "live": null,
       "github": "https://github.com/Saekit/Dog-Walking-App"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "project_name": "What Should I Wear Today",
       "about": "About section...",
-      "video": "https://youtu.be/zUZNdd8Qd8g",
+      "video": "https://www.youtube.com/embed/zUZNdd8Qd8g",
       "live": null,
       "github": "https://github.com/Saekit/module-one-final-project-guidelines-dumbo-web-102918"
     }

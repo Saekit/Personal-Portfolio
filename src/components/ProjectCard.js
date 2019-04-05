@@ -7,9 +7,7 @@ class ProjectCard extends Component {
       <div>
         <h1>{project.project_name}</h1>
         <h2>{project.about}</h2>
-        <video>
-          <source src={project.video} type="video/mp4" />
-        </video>
+        <iframe width="560" height="315" src={project.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <a href={project.live}>
           Live Demo Link ||
         </a>
