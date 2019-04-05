@@ -5,7 +5,7 @@ class ProjectsContainer extends Component {
   render() {
 
     return(
-      <div>
+      <div className='project-container'>
         <h1>Projects</h1>
         {this.props.projects.map(project =>
           <ProjectCard
