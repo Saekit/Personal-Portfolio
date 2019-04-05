@@ -5,9 +5,9 @@ class ProjectCard extends Component {
     const {project} = this.props
     return(
       <div className='project-card'>
-        <a href={project.live}>
-          <h1>{project.project_name}</h1>
-        </a>
+
+        <h1 className='project-name'>{project.project_name}</h1>
+
         <div className='about-vid'>
         <h2 className='project-about'>{project.about}</h2>
 
@@ -21,12 +21,14 @@ class ProjectCard extends Component {
         </div>
         <br />
 
+        <div className='proj-links'>
         <a href={project.live}>
           Live Demo Link ||
         </a>
         <a href={project.github}>
           GitHub Link
         </a>
+        </div>
 
       </div>
     )
