@@ -6,7 +6,8 @@
       "about": "Biome Atlas began as a desire to get more people to care about their environment by being able to see all the interesting forms of life that live on Earth. I believe that learning empathy at a young age is the best approach. I designed Biome Atlas to teach children about the seven environmental biomes on Earth, including the animals and vegetation that inhabit them. Utilizing a custom Rails json API, the backend database was built to securely store and send information of biomes, animals, and plants. Implementing React and Redux to handle over 10 states, created 8 routes, and passed information between over 25 components. Designed user interface, slider, and forms with Semantic UI React, custom CSS, and React Transition Group. Used react library Strider to create an interactive quiz.",
       "video": "https://www.youtube.com/embed/0NBABLy1rEE",
       "live": "https://biome-atlas.netlify.com",
-      "github": "https://github.com/Saekit/Mod-5-Project-Biome-Atlas-Frontend"
+      "github": "https://github.com/Saekit/Mod-5-Project-Biome-Atlas-Frontend",
+      "preview": "/images/biome-atlas-pic.png"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "about": "Utilizes the Spotify API and authentication to allow users to login and create custom playlists. Built backend database using Ruby Spotify API wrapper to enable use of songs on frontend. Used React to show the searchable songs, create a playlist, and add songs to the playlist. Songs added to playlist were then automatically appended to the database in the backend. Designed sidebar, forms, and user interface with BootStrap and CSS. Implemented Authorization to utilize JSON web tokens, and local storage to store encrypted user info client-side.",
       "video": "https://www.youtube.com/embed/xh2VugsQukk",
       "live": null,
-      "github": "https://github.com/Saekit/Mod-4-Project-Music-App"
+      "github": "https://github.com/Saekit/Mod-4-Project-Music-App",
+      "preview": "/images/playlister-pic.png"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "about": "Employs JavaScript and Rails for users to create their own custom stories with pictures. Developed a Rails backend database to store book data submitted by the user. Built frontend using JavaScript DOM manipulation and HTML; implemented full CRUD for interacting with books. Designed with BootStrap and CSS to show modal pop-ups, navbar, and other user interface features.",
       "video": "https://www.youtube.com/embed/ciGhzl1E2-Y",
       "live": null,
-      "github": "https://github.com/Saekit/Mod-3-Project-Storybook-Maker"
+      "github": "https://github.com/Saekit/Mod-3-Project-Storybook-Maker",
+      "preview": "/images/storybook-pic.png"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "about": "Created using Ruby on Rails MVC and Postgres. This was the second project that I created with a partner during my Flatiron School experience. Bootstrap was implemented for styling. Sessions and bCrypt was used to keep users logged in and secure.",
       "video": "https://www.youtube.com/embed/bqGjV5hzfRQ",
       "live": null,
-      "github": "https://github.com/Saekit/Dog-Walking-App"
+      "github": "https://github.com/Saekit/Dog-Walking-App",
+      "preview": "/images/dogwalker-pic.png"
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "about": "What Should I Wear Today was created to fix the issue of not knowing what to wear based on the weather outside. This project logs the clothing the user owns into the database and returns the appropriate clothing based on the weather of the location the user would like to visit. The user must first enter their name, then create a closet; if the user already created a closet, the user can edit the clothing in their closet or go straight to the 'What should I wear?' choice. Enter a location and watch it go! Created using the Ruby command line. Implemented Geocoder, TTYPrompt, Colorize, and the Dark Sky API.",
       "video": "https://www.youtube.com/embed/zUZNdd8Qd8g",
       "live": null,
-      "github": "https://github.com/Saekit/module-one-final-project-guidelines-dumbo-web-102918"
+      "github": "https://github.com/Saekit/module-one-final-project-guidelines-dumbo-web-102918",
+      "preview": "/images/weather-pic.png"
     }
   ],
   "hobbies" : [

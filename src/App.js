@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Contact from './components/Contact'
+import ProjectInfoContainer from './containers/ProjectInfoContainer'
 
 
 class App extends Component {
@@ -28,6 +29,10 @@ class App extends Component {
           </div>
           <div className="main">
             <Switch>
+              <Route
+                path='/projectinfo'
+                component={ProjectInfoContainer}
+              />
               <Route
                 path="/projects"
                 render={() =>

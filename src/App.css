@@ -97,7 +97,6 @@ html, body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  /* background: url("https://images.pexels.com/photos/296884/pexels-photo-296884.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); */
   background-color: #D4AA6A;
   padding: 10px;
   border-bottom: 4px solid #805515;
@@ -112,7 +111,7 @@ html, body {
   color: #553300;
 }
 .navbar a:hover {
-  border-radius: 10%;
+  border-radius: 20px;
   /* background: rgba(50.2, 33.3, 8.2, 0.5); */
   background: rgba(66.7, 49, 22.4, 0.5);
 }
@@ -156,13 +155,60 @@ html, body {
   align-items: center;
   background: url("https://img.freepik.com/free-photo/white-marble-texture-background-abstract-marble-texture-natural-patterns-design_41389-323.jpg?size=626&ext=jpg");
   font-family: 'Alice', serif;
+  overflow: scroll;
 }
-.project-card {
 
+.project-card {
+  position: relative;
+  width: 50%;
+}
+.preview-pic {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.project-card:hover .image {
+  opacity: 0.3;
+}
+
+.project-card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #D4AA6A;
+  border: 3px solid #805515;
+  border-radius: 20px;
+  color: #553300;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://img.freepik.com/free-photo/white-marble-texture-background-abstract-marble-texture-natural-patterns-design_41389-323.jpg?size=626&ext=jpg");
+  font-family: 'Alice', serif;
 }
 .about-vid {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -171,8 +217,18 @@ html, body {
   height: 315px;
 }
 .project-about {
-  /* width: 50%; */
-  flex-basis: 50%;
+  width: 50%;
+}
+
+.proj-links a {
+  float: left;
+  background-color: #D4AA6A;
+  border: 3px solid #805515;
+  border-radius: 20px;
+  color: #553300;
+  font-size: 16px;
+  padding: 16px 32px;
+  margin: 5px;
 }
 
 /* For Medium Screens*/
@@ -184,8 +240,8 @@ html, body {
     justify-content: space-around;
   }
   .navbar a:hover {
-    border-radius: 10%;
-    background: rgba(50.2, 33.3, 8.2, 0.5);
+    border-radius: 20px;
+    background: rgba(66.7, 49, 22.4, 0.5);
     border-bottom: none;
   }
   .project-card {
@@ -195,7 +251,7 @@ html, body {
   align-content: center;
   }
   .project-about {
-    width: 70%;
+    width: 80%;
   }
   .about-vid {
     flex-direction: column;
@@ -228,7 +284,8 @@ html, body {
     border-bottom: none;
   }
   .navbar a:hover {
-    background-color: rgba(50.2, 33.3, 8.2, 0.5);
+    background: rgba(66.7, 49, 22.4, 0.5);
+    border-radius: 20px;
     border-bottom: none;
   }
 
@@ -257,7 +314,7 @@ html, body {
   align-content: center;
   }
   .project-about {
-    width: 70%;
+    width: 80%;
   }
   .about-vid {
     flex-direction: column;
@@ -270,6 +327,10 @@ html, body {
   }
   .proj-links {
     text-align: center;
+  }
+  .project-video {
+    width: 80%;
+    height: auto;
   }
 
 }
