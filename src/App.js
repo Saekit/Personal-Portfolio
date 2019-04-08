@@ -50,7 +50,7 @@ class App extends Component {
               />
               <Route
                 path="/"
-                component={Home}
+                render={()=><Home projects={this.props.projects} />}
               />
             </Switch>
           </div>

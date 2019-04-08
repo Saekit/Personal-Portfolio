@@ -15,7 +15,6 @@ class ProjectCard extends Component {
             className="preview-pic"
             src={project.preview}
             alt="project-preview-image"
-
           />
 
           <div className="middle" >
@@ -25,33 +24,8 @@ class ProjectCard extends Component {
           </div>
 
         </Link>
-        <br/>
       </div>
     )
   }
 }
 export default connect(null, {changeProject})(ProjectCard);
-
-        // <h1 className='project-name'>{project.project_name}</h1>
-        //
-        // <div className='about-vid'>
-        // <h2 className='project-about'>{project.about}</h2>
-        //
-        // <iframe
-        //   className="project-video"
-        //   src={project.video}
-        //   frameborder="0"
-        //   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        //   allowfullscreen>
-        // </iframe>
-        // </div>
-        // <br />
-        //
-        // <div className='proj-links'>
-        // <a href={project.live}>
-        //   Live Demo Link ||
-        // </a>
-        // <a href={project.github}>
-        //   GitHub Link
-        // </a>
-        // </div>

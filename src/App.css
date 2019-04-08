@@ -9,7 +9,7 @@ html, body {
   min-height: 100vh;
   margin-bottom: -142px;
   position: relative;
-  background: url("https://images.pexels.com/photos/1050294/pexels-photo-1050294.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background: url("https://img.freepik.com/free-photo/white-marble-texture-background-abstract-marble-texture-natural-patterns-design_41389-323.jpg?size=626&ext=jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
@@ -96,23 +96,23 @@ html, body {
   margin: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #D4AA6A;
-  padding: 10px;
+  padding: 5px;
   border-bottom: 4px solid #805515;
   font-family: 'Alice', serif;
 }
 .navbar a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 10px;
   font-size: 4vh;
   font-weight: 800;
   color: #553300;
+  text-align: center;
 }
 .navbar a:hover {
   border-radius: 20px;
-  /* background: rgba(50.2, 33.3, 8.2, 0.5); */
   background: rgba(66.7, 49, 22.4, 0.5);
 }
 
@@ -135,7 +135,7 @@ html, body {
   height: auto;
   width: 200px;
   border: solid 2px #805515;
-  border-radius: 50%;
+  border-radius: 100px;
 }
 .home-bio {
   flex: 1;
@@ -147,13 +147,17 @@ html, body {
   width: 80%;
 }
 
+.Content h1 {
+  text-align: center;
+  font-family: 'Alice', serif;
+  color: #553300;
+}
 
 .project-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("https://img.freepik.com/free-photo/white-marble-texture-background-abstract-marble-texture-natural-patterns-design_41389-323.jpg?size=626&ext=jpg");
   font-family: 'Alice', serif;
   overflow: scroll;
 }
@@ -169,6 +173,8 @@ html, body {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  border: 3px solid #805515;
+  margin-top: 10px;
 }
 .middle {
   transition: .5s ease;
@@ -203,7 +209,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("https://img.freepik.com/free-photo/white-marble-texture-background-abstract-marble-texture-natural-patterns-design_41389-323.jpg?size=626&ext=jpg");
   font-family: 'Alice', serif;
 }
 .about-vid {

@@ -6,7 +6,6 @@ class ProjectsContainer extends Component {
 
     return(
       <div className='project-container'>
-        <h1>Projects</h1>
         {this.props.projects.map(project =>
           <ProjectCard
             key={project.id}
