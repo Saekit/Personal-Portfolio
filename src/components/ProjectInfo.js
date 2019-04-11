@@ -31,7 +31,7 @@ class ProjectCard extends Component {
           Live Demo
         </a> : null}
           <a href={project.github}>
-            GitHub
+            Code
           </a>
         </div>
       </div>

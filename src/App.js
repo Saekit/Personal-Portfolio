@@ -8,7 +8,7 @@ import Home from './containers/Home'
 import { getProjects } from './actions/projectActions'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
-import About from './components/About'
+import Resume from './components/Resume'
 import Contact from './components/Contact'
 import ProjectInfoContainer from './containers/ProjectInfoContainer'
 
@@ -45,8 +45,8 @@ class App extends Component {
                 component={Contact}
               />
               <Route
-                path='/about'
-                component={About}
+                path='/resume'
+                component={Resume}
               />
               <Route
                 path="/"
