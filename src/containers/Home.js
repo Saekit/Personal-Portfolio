@@ -11,7 +11,7 @@ class Home extends Component {
         </div>
         <div className='home-bio'>
           <h2>Full Stack Web Developer</h2>
-          <p>I am a full stack web developer with experience using JavaScript and Ruby programming languages. I love creativity with style, so making apps look as good as they work is my passion.</p>
+          <p>I'm a full stack web developer with a liberal arts, health science, and education background. I love all things cute. I'm currently searching for a team where I can learn and grow as a programmer.</p>
         </div>
 
         <div className="home-projects-container">

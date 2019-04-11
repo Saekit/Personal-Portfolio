@@ -11,6 +11,8 @@ import NavBar from './components/NavBar'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
 import ProjectInfoContainer from './containers/ProjectInfoContainer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 class App extends Component {
@@ -39,10 +41,6 @@ class App extends Component {
                   <ProjectsContainer
                     projects={this.props.projects}
                   />}
-              />
-              <Route
-                path="/contact"
-                component={Contact}
               />
               <Route
                 path='/resume'
