@@ -42,6 +42,13 @@ const Resume = () => {
           <li>Designed and ran promotional in-store events.</li>
         </ul>
 
+        <h3>HIES Inc.</h3>
+        <p>GIS, AutoCAD, Administrative Assistant, Summer Job 2008-2012, Mar 2014 - May 2014</p>
+          <ul>
+            <li>Used Environmental Engineering, GIS and AutoCAD technology under the tech lead.</li>
+            <li>Administrative assistant responsibilities, such as organizing, binding, scanning, and copying files and documents, making reservations for car rentals and flights, and other duties presented upon request.</li>
+          </ul>
+
         <h3>Kids Duo, Tokyo, Japan</h3>
         <p>ESL English Teacher, Feb 2013 - Feb 2014</p>
         <ul>
