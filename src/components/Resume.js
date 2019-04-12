@@ -54,6 +54,9 @@ const Resume = () => {
         <h3>Flatiron School - 2019</h3>
         <p>Full Stack Web Development, JavaScript, Ruby on Rails, SQL, and React</p>
 
+        <h3>Hunter College - 2017</h3>
+        <p>Health Sciences, Nutrition, Chemistry</p>
+
         <h3>Soka University of America - Aliso Viejo, CA - 2012</h3>
         <p>Bachelor of Arts: Social and Behavioral Sciences: 3.8 GPA, Magna Cum Laude</p>
         <br />
