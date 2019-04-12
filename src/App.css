@@ -190,6 +190,13 @@ html, body {
 .home-about p {
   text-align: justify;
 }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 
 .project-container {
   display: flex;
