@@ -4,6 +4,9 @@ import { connect } from 'react-redux'
 import {Link} from 'react-router-dom'
 
 class ProjectCard extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
   render(){
     const {project} = this.props
     return(

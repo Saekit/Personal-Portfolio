@@ -12,7 +12,7 @@
     {
       "id": 2,
       "project_name": "Playlister",
-      "about": "Utilizes the Spotify API and authentication to allow users to login and create custom playlists. Built backend database using Ruby Spotify API wrapper to enable use of songs on frontend. Used React to show the searchable songs, create a playlist, and add songs to the playlist. Songs added to playlist were then automatically appended to the database in the backend. Designed sidebar, forms, and user interface with BootStrap and CSS. Implemented Authorization to utilize JSON web tokens, and local storage to store encrypted user info client-side.",
+      "about": "I created Playlister to learn how to use Spotify's API. I also chose to implement Auth in this project to allow users to login and create custom playlists. The backend database was built using Ruby Spotify API wrapper to enable use of songs on frontend. I used React to show the searchable songs, create a playlist, and add songs to the playlist. Songs added to the playlist were then automatically appended to the database in the backend. I designed the sidebar, forms, and user interface with BootStrap and CSS and implemented Authorization to utilize JSON web tokens, and local storage to store encrypted user info client-side.",
       "video": "https://www.youtube.com/embed/xh2VugsQukk",
       "live": null,
       "github": "https://github.com/Saekit/Mod-4-Project-Music-App",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "project_name": "StoryBook Maker",
-      "about": "Employs JavaScript and Rails for users to create their own custom stories with pictures. Developed a Rails backend database to store book data submitted by the user. Built frontend using JavaScript DOM manipulation and HTML; implemented full CRUD for interacting with books. Designed with BootStrap and CSS to show modal pop-ups, navbar, and other user interface features.",
+      "about": "Storybook Maker is one of my favorite sindle page apps. I create this app because I wanted to be able to easily make fun stories/book pages that friends could add to. This app employs JavaScript and Rails for users to create their own custom stories with pictures. I developed a Rails backend database to store book data submitted by the user and built the frontend using JavaScript DOM manipulation and HTML. I implemented full CRUD for interacting with the books. It was designed with BootStrap and CSS to show modal pop-ups, the navbar, and other user interface features.",
       "video": "https://www.youtube.com/embed/ciGhzl1E2-Y",
       "live": null,
       "github": "https://github.com/Saekit/Mod-3-Project-Storybook-Maker",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "project_name": "Dog Walker",
-      "about": "Created using Ruby on Rails MVC and Postgres. This was the second project that I created with a partner during my Flatiron School experience. Bootstrap was implemented for styling. Sessions and bCrypt was used to keep users logged in and secure.",
+      "about": "I originally wasn't too happy making a copy of the popular dog walking app, Wag, but after working on it for so many hours I grew to love it. In this app, users can create themselves as a dog walker or a dog owner and then choose to take care of a dog or to create an appointment for their own dog. It was created using Ruby on Rails MVC and Postgres. This was the second project that I created with a partner during my Flatiron School experience. Bootstrap was implemented for styling. Sessions and bCrypt was used to keep users logged in and secure.",
       "video": "https://www.youtube.com/embed/bqGjV5hzfRQ",
       "live": null,
       "github": "https://github.com/Saekit/Dog-Walking-App",
@@ -44,36 +44,6 @@
       "live": null,
       "github": "https://github.com/Saekit/module-one-final-project-guidelines-dumbo-web-102918",
       "preview": "/images/weather-pic.png"
-    }
-  ],
-  "hobbies" : [
-    {
-      "id": 1,
-      "hobby_name": "Travel",
-      "about": "About section...",
-      "img1": "img",
-      "img2": "img"
-    },
-    {
-      "id": 2,
-      "hobby_name": "Crochet",
-      "about": "About section...",
-      "img1": "img",
-      "img2": "img"
-    },
-    {
-      "id": 3,
-      "hobby_name": "Fantasy",
-      "about": "About section...",
-      "img1": "img",
-      "img2": "img"
-    },
-    {
-      "id": 4,
-      "hobby_name": "Food",
-      "about": "About section...",
-      "img1": "img",
-      "img2": "img"
     }
   ]
 
