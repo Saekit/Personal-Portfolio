@@ -73,7 +73,6 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state.projects)
     return (
       <div className="App">
         <div className="Content">
