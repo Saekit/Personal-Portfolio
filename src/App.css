@@ -1,64 +1,19 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
 .App {
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin-bottom: -142px;
   position: relative;
-  /* background: url("https://img.freepik.com/free-photo/white-marble-texture-background-abstract-marble-texture-natural-patterns-design_41389-323.jpg?size=626&ext=jpg"); */
   background: linear-gradient(35deg, #ffcccc, #cff);
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-/*
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-} */
-/*
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* .Content {
-  flex: 1 0 auto;
-  padding: var(--space) var(--space) 0;
-  width: 100%;
-}
-
-.Content:after {
-  content: '\00a0';
-  display: block;
-  margin-top: var(--space);
-  height: 0;
-  visibility: hidden;
-} */
 .Content {
   padding-bottom: 2.5rem;
 }
@@ -94,20 +49,25 @@ html, body {
   color: #553300;
 }
 .footer p {
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   display: block;
   color: rgba(66.7, 49, 22.4, 0.5);
 }
-
+/* .navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  opacity: 1;
+  background-color: linear-gradient(35deg, #ffcccc, #cff);
+} */
 .navbar {
   list-style: none;
   margin: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-color: linear-gradient(35deg, #ffcccc, #cff);
   padding: 5px;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
 }
 .navbar a {
   text-decoration: none;
@@ -115,26 +75,22 @@ html, body {
   padding: 10px;
   font-size: 4vh;
   font-weight: 800;
-  /* color: #553300; */
   color: rgba(66.7, 49, 22.4, 0.5);
   text-align: center;
 }
 .navbar a:hover {
   border-radius: 20px;
-  /* background: #e6ffff; */
-  /* background: rgba(66.7, 49, 22.4, 0.5); */
-  /* color: #99ccff; */
   color: #553300;
   text-decoration: underline;
-  transition: all .5s;
+  transition: all 0.5s;
   margin: 0 10px;
 }
 .navbar a:after {
-  transition: all .5s;
+  transition: all 0.5s;
   text-decoration: underline;
 }
 .navbar a:before {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .home-container {
@@ -146,13 +102,13 @@ html, body {
 .home-container h1 {
   text-align: center;
   color: #553300;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
 }
 .home-bio {
   flex: 1;
   justify-content: center;
   text-align: center;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   color: #553300;
   font-size: 20px;
   font-weight: 800;
@@ -165,7 +121,7 @@ html, body {
   color: #553300;
 }
 .name h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 .selfie {
   height: auto;
@@ -181,7 +137,7 @@ html, body {
 .home-about {
   text-align: center;
   width: 80%;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   color: #553300;
   font-weight: 800;
   font-size: 20px;
@@ -203,7 +159,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   margin-bottom: 160px;
 }
 
@@ -217,13 +173,13 @@ html, body {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
   /* border: 3px solid #805515; */
   margin-top: 10px;
 }
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -245,13 +201,12 @@ html, body {
   padding: 16px 32px;
 }
 
-
 .project-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   margin-bottom: 100px;
   color: #553300;
   font-size: 20px;
@@ -282,45 +237,53 @@ html, body {
   text-decoration: none;
 }
 
-.proj-links a{
-	position: relative;
-	outline: none;
-	padding: 20px;
-	box-sizing: border-box;
-	text-align: center;
-	line-height: 14px;
-	font-weight: 200;
-	letter-spacing: 1px;
-	text-decoration: none;
-	box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
-	cursor: pointer;
-	overflow:hidden;
+.proj-links a {
+  position: relative;
+  outline: none;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.proj-links a:hover:before{
-	animation: ripple 1s ease;
+.proj-links a:hover:before {
+  animation: ripple 1s ease;
 }
 
-.proj-links a:before{
-	content:"";
-	position:absolute; top:0; left:0;
-	width:100%; height:100%;
-  background-color:rgba(255, 255, 255, 0.7);
-  border-radius:50%;
-	transform:scale(0);
+.proj-links a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  transform: scale(0);
 }
 
-@keyframes ripple{
-	from{transform:scale(0); opacity:1;}
-	to{transform:scale(3);opacity:0;}
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
-
 
 .resume-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   color: #553300;
   font-weight: 800;
   font-size: 20px;
@@ -352,10 +315,10 @@ html, body {
     border-bottom: none;
   }
   .project-card {
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
   }
   .project-about {
     width: 80%;
@@ -384,8 +347,8 @@ html, body {
   .navbar a {
     text-align: center;
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .navbar li:last-of-type a {
     border-bottom: none;
@@ -404,8 +367,8 @@ html, body {
   .footer a {
     text-align: center;
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .footer li:last-of-type a {
     border-bottom: none;
@@ -415,10 +378,10 @@ html, body {
     flex-wrap: wrap;
   }
   .project-card {
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
   }
   .project-about {
     width: 80%;
@@ -439,5 +402,4 @@ html, body {
     width: 80%;
     height: auto;
   }
-
 }
