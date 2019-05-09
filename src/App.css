@@ -251,7 +251,16 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
-
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
 .proj-links a:hover:before {
   animation: ripple 1s ease;
 }
@@ -266,17 +275,6 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   transform: scale(0);
-}
-
-@keyframes ripple {
-  from {
-    transform: scale(0);
-    opacity: 1;
-  }
-  to {
-    transform: scale(3);
-    opacity: 0;
-  }
 }
 
 .resume-container {
@@ -299,6 +297,40 @@ body {
 }
 .resume h2 {
   text-decoration: underline;
+}
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  font-family: "Alice", serif;
+  color: #553300;
+}
+.blogcard-container {
+  height: 350px;
+  padding: 15px;
+  margin: 10px;
+  font-family: "Alice", serif;
+  color: #553300;
+  align-items: flex-start;
+  font-size: 20px;
+}
+.blog-content-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.blogcard-container a {
+  text-decoration: none;
+  color: #553300;
+}
+.blog-content {
+  width: 65%;
+}
+.blog-img img {
+  width: 150px;
+  height: auto;
 }
 
 /* For Medium Screens*/
@@ -401,5 +433,14 @@ body {
   .project-video {
     width: 80%;
     height: auto;
+  }
+  .blogcard-container {
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+  .blog-content p {
+    height: 5.7em;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

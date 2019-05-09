@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Resume from "./components/Resume";
 import About from "./components/About";
+import BlogContainer from "./containers/BlogContainer";
 import ProjectInfoContainer from "./containers/ProjectInfoContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -64,9 +65,54 @@ const projects = [
   }
 ];
 
+const articles = [
+  {
+    id: 1,
+    article_name: "Strftime in Ruby",
+    content:
+      "What is time? According to physicists, time is one of the most difficult properties of the universe to understand. According to programmers, Time is a class. And according to my favorite doctor, 'it’s more like a big ball of wibbly-wobbly, timey-wimey…stuff...'",
+    date: "Dec 2, 2018",
+    link: "https://medium.com/pushtostart/strftime-in-ruby-bc7b268ee5ac",
+    image: "/images/time.png"
+  },
+  {
+    id: 2,
+    article_name:
+      "A Beginners Walkthrough to Make a Super Simple To Do List React App",
+    content:
+      "Currently I’m on my last learning module in the coding bootcamp that I’m attending (Flatiron School! Woo!). We started learning React JS about a week ago and things are still a little fuzzy for me, but I’m starting to get the hang of it. The really important step in any learning process is practice...",
+    date: "Jan 13, 2019",
+    link:
+      "https://medium.com/@raquel.sae.randall/a-beginners-walkthrough-to-make-a-super-simple-to-do-list-react-app-e7a29d43ff75",
+    image: "/images/todo.png"
+  },
+  {
+    id: 3,
+    article_name: "Setting Up A Spotify API in Rails",
+    content:
+      "In my last project I used the Spotify API to make a playlist app. I used a Rails backend with a React frontend and had my fetch requests on the frontend. Here I will be explaining how I used the Spotify API in my Rails API using a Ruby gem Spotify API wrapper...",
+    date: "Jan 27, 2019",
+    link:
+      "https://medium.com/@raquel.sae.randall/setting-up-a-spotify-api-in-rails-8d60732fe93",
+    image: "/images/music.png"
+  },
+  {
+    id: 4,
+    article_name:
+      "What I Found Important After Graduating From A Coding Bootcamp",
+    content:
+      "So you just graduated from a coding bootcamp…Congratulations! Go out there and start getting those jobs! For those of you who are more like me and feel like there’s more to be done then this article is for you...",
+    date: "May 9, 2019",
+    link:
+      "https://medium.com/@raquel.sae.randall/what-i-found-important-after-graduating-from-a-coding-bootcamp-92dcca55ecf",
+    image: "/images/friends.png"
+  }
+];
+
 class App extends Component {
   state = {
-    projects: projects
+    projects: projects,
+    articles: articles
   };
 
   render() {
@@ -85,6 +131,10 @@ class App extends Component {
               />
               <Route path="/resume" component={Resume} />
               <Route path="/about" component={About} />
+              <Route
+                path="/blog"
+                render={() => <BlogContainer articles={this.state.articles} />}
+              />
               <Route
                 path="/"
                 render={() => <Home projects={this.state.projects} />}
