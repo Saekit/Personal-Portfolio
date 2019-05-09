@@ -119,7 +119,7 @@ const Resume = () => {
           Laude
         </p>
         <br />
-        <a href="https://www.linkedin.com/in/raquel-randall/">
+        <a target="_blank" href="https://www.linkedin.com/in/raquel-randall/">
           <h2>Visit my Linkedin for more details</h2>
         </a>
       </div>

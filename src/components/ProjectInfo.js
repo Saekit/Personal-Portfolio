@@ -25,8 +25,14 @@ class ProjectCard extends Component {
         </div>
 
         <div className="proj-links">
-          {project.live !== null ? <a href={project.live}>Live Demo</a> : null}
-          <a href={project.github}>Code</a>
+          {project.live !== null ? (
+            <a target="_blank" href={project.live}>
+              Live Demo
+            </a>
+          ) : null}
+          <a target="_blank" href={project.github}>
+            Code
+          </a>
         </div>
       </div>
     );
