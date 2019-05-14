@@ -137,7 +137,12 @@ class App extends Component {
               />
               <Route
                 path="/"
-                render={() => <Home projects={this.state.projects} />}
+                render={() => (
+                  <Home
+                    projects={this.state.projects}
+                    articles={this.state.articles}
+                  />
+                )}
               />
             </Switch>
           </div>

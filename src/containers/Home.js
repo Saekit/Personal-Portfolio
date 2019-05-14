@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ProjectsContainers from "./ProjectsContainers";
 import About from "../components/About";
+import BlogContainer from "./BlogContainer";
 
 class Home extends Component {
   render() {
@@ -29,6 +30,10 @@ class Home extends Component {
           <u>About Me</u>
         </h1>
         <About />
+
+        <div className="home-blog-container">
+          <BlogContainer articles={this.props.articles} />
+        </div>
       </div>
     );
   }
