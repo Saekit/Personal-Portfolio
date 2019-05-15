@@ -21,19 +21,6 @@ class NavBar extends Component {
           <li className="nav-item">
             <a href="https://raquel-randall.netlify.com">Home</a>
           </li>
-          <li className="nav-item">
-            <a href="https://raquel-randall.netlify.com/projects">Projects</a>
-          </li>
-          <li className="nav-item">
-            <a href="https://raquel-randall.netlify.com/about">About</a>
-          </li>
-
-          <li className="nav-item">
-            <a href="https://raquel-randall.netlify.com/resume">Resume</a>
-          </li>
-          <li className="nav-item">
-            <a href="https://raquel-randall.netlify.com/blog">Blog</a>
-          </li>
         </ul>
       );
     } else {
