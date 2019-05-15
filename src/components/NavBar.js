@@ -15,24 +15,24 @@ class NavBar extends Component {
     scroll.scrollToBottom();
   };
   nav = () => {
-    if (window.location.href !== "http://localhost:3000/") {
+    if (window.location.href !== "https://raquel-randall.netlify.com/") {
       return (
         <ul className="navbar">
           <li className="nav-item">
-            <a href="http://localhost:3000">Home</a>
+            <a href="https://raquel-randall.netlify.com">Home</a>
           </li>
           <li className="nav-item">
-            <a href="http://localhost:3000/projects">Projects</a>
+            <a href="https://raquel-randall.netlify.com/projects">Projects</a>
           </li>
           <li className="nav-item">
-            <a href="http://localhost:3000/about">About</a>
+            <a href="https://raquel-randall.netlify.com/about">About</a>
           </li>
 
           <li className="nav-item">
-            <a href="http://localhost:3000/resume">Resume</a>
+            <a href="https://raquel-randall.netlify.com/resume">Resume</a>
           </li>
           <li className="nav-item">
-            <a href="http://localhost:3000/blog">Blog</a>
+            <a href="https://raquel-randall.netlify.com/blog">Blog</a>
           </li>
         </ul>
       );
