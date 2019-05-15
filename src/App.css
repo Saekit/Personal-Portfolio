@@ -53,13 +53,15 @@ body {
   display: block;
   color: rgba(66.7, 49, 22.4, 0.5);
 }
-/* .navbar-container {
-  position: sticky;
+.navbar-container {
+  /* position: sticky;
   top: 0;
   z-index: 10;
   opacity: 1;
-  background-color: linear-gradient(35deg, #ffcccc, #cff);
-} */
+  transition: 0.5s; */
+  /* background: linear-gradient(35deg, #ffcccc, #cff); */
+}
+
 .navbar {
   list-style: none;
   margin: 0;
