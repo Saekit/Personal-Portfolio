@@ -15,6 +15,7 @@ class ProjectCard extends Component {
         <div className="about-vid">
           <iframe
             className="project-video"
+            title="project"
             src={project.video}
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -26,11 +27,11 @@ class ProjectCard extends Component {
 
         <div className="proj-links">
           {project.live !== null ? (
-            <a target="_blank" href={project.live}>
+            <a target="_blank" rel="noopener noreferrer" href={project.live}>
               Live Demo
             </a>
           ) : null}
-          <a target="_blank" href={project.github}>
+          <a target="_blank" rel="noopener noreferrer" href={project.github}>
             Code
           </a>
         </div>

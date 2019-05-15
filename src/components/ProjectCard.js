@@ -18,7 +18,7 @@ class ProjectCard extends Component {
           <img
             className="preview-pic"
             src={project.preview}
-            alt="project-preview-image"
+            alt="project-preview"
           />
 
           <div className="middle">

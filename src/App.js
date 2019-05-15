@@ -9,7 +9,7 @@ import Resume from "./components/Resume";
 import About from "./components/About";
 import BlogContainer from "./containers/BlogContainer";
 import ProjectInfoContainer from "./containers/ProjectInfoContainer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const projects = [
   {

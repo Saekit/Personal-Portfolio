@@ -10,7 +10,7 @@ class Blog extends React.Component {
       <div className="blogcard-container">
         <div className="blog-header">
           <h2>
-            <a target="_blank" href={article.link}>
+            <a target="_blank" rel="noopener noreferrer" href={article.link}>
               {article.article_name}
             </a>
           </h2>
@@ -19,12 +19,12 @@ class Blog extends React.Component {
         <div className="blog-content-img">
           <div className="blog-content">
             <p>{article.content}</p>
-            <a target="_blank" href={article.link}>
+            <a target="_blank" rel="noopener noreferrer" href={article.link}>
               Read More
             </a>
           </div>
           <div className="blog-img">
-            <a target="_blank" href={article.link}>
+            <a target="_blank" rel="noopener noreferrer" href={article.link}>
               <img src={article.image} alt="article" />
             </a>
           </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ProjectsContainers from "./ProjectsContainers";
 import About from "../components/About";
 import BlogContainer from "./BlogContainer";
