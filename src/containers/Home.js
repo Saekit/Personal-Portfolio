@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import ProjectsContainers from "./ProjectsContainers";
 import About from "../components/About";
 import BlogContainer from "./BlogContainer";
+import Resume from "../components/Resume";
 
 class Home extends Component {
   render() {
@@ -20,18 +21,24 @@ class Home extends Component {
           </p>
         </div>
 
-        <div className="home-projects-container">
+        <div className="home-projects-container" id="projects">
           <h1>
             <u>My Projects</u>
           </h1>
           <ProjectsContainers projects={this.props.projects} />
         </div>
-        <h1>
-          <u>About Me</u>
-        </h1>
-        <About />
+        <div id="about">
+          <h1>
+            <u>About Me</u>
+          </h1>
+          <About />
+        </div>
 
-        <div className="home-blog-container">
+        <div id="resume">
+          <Resume />
+        </div>
+
+        <div className="home-blog-container" id="blog">
           <BlogContainer articles={this.props.articles} />
         </div>
       </div>
