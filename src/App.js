@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route, Switch, withRouter } from "react-router-dom";
-// import ProjectsContainer from "./containers/ProjectsContainers";
 import Home from "./containers/Home";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import ProjectInfoContainer from "./containers/ProjectInfoContainer";
+// import ProjectsContainer from "./containers/ProjectsContainers";
 // import Resume from "./components/Resume";
 // import About from "./components/About";
 // import BlogContainer from "./containers/BlogContainer";
-import ProjectInfoContainer from "./containers/ProjectInfoContainer";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const projects = [
