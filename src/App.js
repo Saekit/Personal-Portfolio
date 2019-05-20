@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route, Switch, withRouter } from "react-router-dom";
-import ProjectsContainer from "./containers/ProjectsContainers";
+// import ProjectsContainer from "./containers/ProjectsContainers";
 import Home from "./containers/Home";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import Resume from "./components/Resume";
-import About from "./components/About";
-import BlogContainer from "./containers/BlogContainer";
+// import Resume from "./components/Resume";
+// import About from "./components/About";
+// import BlogContainer from "./containers/BlogContainer";
 import ProjectInfoContainer from "./containers/ProjectInfoContainer";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -124,18 +124,6 @@ class App extends Component {
             <Switch>
               <Route path="/projectinfo" component={ProjectInfoContainer} />
               <Route
-                path="/projects"
-                render={() => (
-                  <ProjectsContainer projects={this.state.projects} />
-                )}
-              />
-              <Route path="/resume" component={Resume} />
-              <Route path="/about" component={About} />
-              <Route
-                path="/blog"
-                render={() => <BlogContainer articles={this.state.articles} />}
-              />
-              <Route
                 path="/"
                 render={() => (
                   <Home
@@ -154,3 +142,16 @@ class App extends Component {
 }
 
 export default withRouter(App);
+
+// <Route
+//   path="/projects"
+//   render={() => (
+//     <ProjectsContainer projects={this.state.projects} />
+//   )}
+// />
+// <Route path="/resume" component={Resume} />
+// <Route path="/about" component={About} />
+// <Route
+//   path="/blog"
+//   render={() => <BlogContainer articles={this.state.articles} />}
+// />
