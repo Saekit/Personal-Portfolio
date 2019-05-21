@@ -5,7 +5,9 @@ const Resume = () => {
   return (
     <div className="resume-container">
       <div className="resume">
-        <h1>Resume</h1>
+        <h1>
+          <u>Resume</u>
+        </h1>
         <p>
           Full stack web developer with a passion for combining technology and
           education. Experience in JavaScript, Ruby on Rails, React and Redux,
