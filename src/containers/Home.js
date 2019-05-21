@@ -16,8 +16,9 @@ class Home extends Component {
           <h2>Full Stack Web Developer</h2>
           <p>
             I'm a full stack web developer with a liberal arts, health science,
-            and education background. I love all things cute. I'm currently
-            searching for a team where I can learn and grow as a programmer.
+            and education background. I love traveling, reading, eating good
+            food, watching movies, and all things cute. Currently, I'm preparing
+            for a software engineering internship with a wonderful company.
           </p>
         </div>
 
