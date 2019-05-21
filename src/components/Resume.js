@@ -9,7 +9,7 @@ const Resume = () => {
         <p>
           Full stack web developer with a passion for combining technology and
           education. Experience in JavaScript, Ruby on Rails, React and Redux,
-          and a background in education and management. I discovered web
+          and a background in health, education and management. I discovered web
           development through my desire to learn a skill that motivates me to
           excel and where I can create something impactful and visually
           appealing. I bring strong skills in project management, creativity,
@@ -24,14 +24,9 @@ const Resume = () => {
           <li>React</li>
           <li>Redux</li>
           <li>Rails</li>
-          <li>SQLite</li>
           <li>Bootstrap</li>
           <li>Semantic UI React</li>
         </ul>
-
-        <Link to="/projects">
-          <h2>View Projects</h2>
-        </Link>
 
         <h2>Employment History</h2>
 
