@@ -32,6 +32,9 @@ const Resume = () => {
 
         <h2>Employment History</h2>
 
+        <h3>Blink Health, New York City</h3>
+        <p>Software Engineer Intern, June 2019 - Present</p>
+
         <h3>Banzai Phresh, Honolulu, HI</h3>
         <p>Co-Owner, Jan 2018 - June 2018</p>
         <ul>
