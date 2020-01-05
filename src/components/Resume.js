@@ -33,7 +33,21 @@ const Resume = () => {
         <h2>Employment History</h2>
 
         <h3>Blink Health, New York City</h3>
-        <p>Software Engineer Intern, June 2019 - Present</p>
+        <p>Software Engineer, Sept 2019 - Present</p>
+        <ul>
+          <li>
+            Program mainly frontend React code, adding new features as well as bug fixes to the Blink Health website.
+          </li>
+          <li>
+            Learning backend Python code by pair programming with teammates.
+          </li>
+        </ul>
+        <p>Software Engineer Intern, June 2019 - Sept 2019</p>
+        <ul>
+          <li>
+            Programmed frontend React code under a senior software engineer.
+          </li>
+        </ul>
 
         <h3>Banzai Phresh, Honolulu, HI</h3>
         <p>Co-Owner, Jan 2018 - June 2018</p>

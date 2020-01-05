@@ -41,10 +41,8 @@ class About extends React.Component {
           </p>
           <h3>Life Now:</h3>
           <p>
-            I'm still living in NYC where I am studying programming on my own,
-            coding everyday, and loving every learning moment. I frequently get
-            together with my fellow Flatiron alumni to pair program and study
-            algorithms together.
+            I'm still living in NYC where I am working hard to continue to improve and grow as a programmer,
+            coding everyday, and loving every learning moment.
           </p>
           <p>Live, Love, Code</p>
         </div>
