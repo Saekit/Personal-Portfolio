@@ -15,7 +15,7 @@ class NavBar extends Component {
     scroll.scrollToBottom();
   };
   nav = () => {
-    if (window.location.href !== "https://raquel-randall.netlify.com/") {
+    if (window.location.href !== "https://raquel-randall.netlify.app/") {
       return (
         <ul className="navbar">
           <li className="nav-item">
