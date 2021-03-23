@@ -5,11 +5,6 @@ import Home from "./containers/Home";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import ProjectInfoContainer from "./containers/ProjectInfoContainer";
-// import ProjectsContainer from "./containers/ProjectsContainers";
-// import Resume from "./components/Resume";
-// import About from "./components/About";
-// import BlogContainer from "./containers/BlogContainer";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const projects = [
   {
@@ -142,16 +137,3 @@ class App extends Component {
 }
 
 export default withRouter(App);
-
-// <Route
-//   path="/projects"
-//   render={() => (
-//     <ProjectsContainer projects={this.state.projects} />
-//   )}
-// />
-// <Route path="/resume" component={Resume} />
-// <Route path="/about" component={About} />
-// <Route
-//   path="/blog"
-//   render={() => <BlogContainer articles={this.state.articles} />}
-// />
