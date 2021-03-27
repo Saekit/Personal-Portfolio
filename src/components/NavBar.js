@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link as LinkRouter } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 import ResponsiveMenu from "react-responsive-navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,11 +16,11 @@ class NavBar extends Component {
     scroll.scrollToBottom();
   };
   nav = () => {
-    if (window.location.href !== "https://raquel-randall.netlify.app/") {
+    if (window.location.pathname !== "/") {
       return (
         <ul className="navbar">
           <li className="nav-item">
-            <a href="https://raquel-randall.netlify.com">Home</a>
+            <LinkRouter to="/">Home</LinkRouter>
           </li>
         </ul>
       );
