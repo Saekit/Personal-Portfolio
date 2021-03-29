@@ -6,16 +6,49 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import { makeStyles } from "@material-ui/core/styles";
+
 library.add(faBars, faTimes);
 
-class NavBar extends Component {
-  scrollToTop = () => {
+// need to remove react router
+// home will be on the far left
+// all others will be right aligned
+// figure out how I want mobile to look
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: "#cbb3c9",
+  },
+}));
+
+function ElevationScroll(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: window,
+  });
+
+  return React.cloneElement(children, {
+    elevation: trigger ? 4 : 0,
+  });
+}
+
+function NavBar(props) {
+  const classes = useStyles();
+
+  const scrollToTop = () => {
     scroll.scrollToTop();
   };
-  scrollToBottom = () => {
+
+  const scrollToBottom = () => {
     scroll.scrollToBottom();
   };
-  nav = () => {
+
+  const nav = () => {
     if (window.location.pathname !== "/") {
       return (
         <ul className="navbar">
@@ -26,11 +59,11 @@ class NavBar extends Component {
       );
     } else {
       return (
-        <ul className="navbar">
+        <ul className="navbar" id="nav">
           <li className="nav-item">
             <Link
               activeClass="active"
-              onClick={this.scrollToTop}
+              onClick={scrollToTop}
               spy={true}
               smooth={true}
               offset={-70}
@@ -95,7 +128,7 @@ class NavBar extends Component {
           <li className="nav-item">
             <Link
               activeClass="active"
-              onClick={this.scrollToBottom}
+              onClick={scrollToBottom}
               spy={true}
               smooth={true}
               offset={-70}
@@ -108,19 +141,24 @@ class NavBar extends Component {
       );
     }
   };
-  render() {
-    return (
-      <div className="navbar-container" id="nav">
-        <ResponsiveMenu
-          menuOpenButton={<FontAwesomeIcon icon={faBars} size="3x" />}
-          menuCloseButton={<FontAwesomeIcon icon={faTimes} size="3x" />}
-          changeMenuOn="500px"
-          largeMenuClassName="large-menu-classname"
-          smallMenuClassName="small-menu-classname"
-          menu={this.nav()}
-        />
-      </div>
-    );
-  }
+
+  return (
+    <ElevationScroll {...props}>
+      <AppBar className={classes.root}>
+        <Toolbar>{nav()}</Toolbar>
+      </AppBar>
+    </ElevationScroll>
+  );
 }
 export default NavBar;
+
+{
+  /* <ResponsiveMenu
+menuOpenButton={<FontAwesomeIcon icon={faBars} size="3x" />}
+menuCloseButton={<FontAwesomeIcon icon={faTimes} size="3x" />}
+changeMenuOn="500px"
+largeMenuClassName="large-menu-classname"
+smallMenuClassName="small-menu-classname"
+menu={nav()}
+/> */
+}

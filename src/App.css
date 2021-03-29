@@ -9,13 +9,13 @@ body {
   min-height: 100vh;
   margin-bottom: -142px;
   position: relative;
-  background: linear-gradient(35deg, #ffcccc, #cff);
+  background: #cbb3c9;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .Content {
-  padding-bottom: 2.5rem;
+  margin: 50px 0px;
 }
 
 .footer {
@@ -53,24 +53,32 @@ body {
   display: block;
   color: rgba(66.7, 49, 22.4, 0.5);
 }
-.navbar-container {
-  position: sticky;
+
+.navbar {
   top: 0;
   z-index: 10;
   opacity: 1;
   transition: 0.5s;
-}
-
-.navbar {
+  width: 100%;
+  display: flex;
   list-style: none;
   margin: 0;
-  display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 5px;
   font-family: "Alice", serif;
   cursor: pointer;
+  margin-right: auto;
 }
+
+.nav-item {
+  justify-content: right;
+}
+
+.navbar > li:first-child {
+  margin-right: auto;
+}
+
 .navbar a {
   text-decoration: none;
   display: block;
@@ -116,7 +124,6 @@ body {
 .home-bio {
   flex: 1;
   justify-content: center;
-  text-align: center;
   font-family: "Alice", serif;
   color: #553300;
   font-size: 20px;
@@ -184,7 +191,6 @@ body {
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
-  /* border: 3px solid #805515; */
   margin-top: 10px;
 }
 .middle {
@@ -380,9 +386,6 @@ body {
 
 /* For small screens */
 @media all and (max-width: 600px) {
-  .navbar-container {
-    background: linear-gradient(35deg, #ffcccc, #cff);
-  }
   .navbar {
     flex-direction: column;
     flex-flow: column wrap;
