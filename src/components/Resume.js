@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid rgba(255, 255, 255, 0.18)",
     display: "flex",
     minHeight: 385,
-    maxWidth: 900,
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
     },

@@ -152,7 +152,6 @@ body {
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
-  max-width: 1020px;
 }
 
 .about-container {
@@ -336,7 +335,6 @@ body {
   width: 80%;
   margin: auto;
   margin-bottom: 100px;
-  max-width: 1020px;
 }
 .resume li {
   list-style-type: circle;
@@ -346,6 +344,11 @@ body {
 }
 
 /* Blog */
+.home-blog-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
 .blogcard {
   height: 350px;
   padding: 15px;
@@ -492,6 +495,10 @@ body {
   }
 
   .about-tech {
+    width: unset;
+  }
+
+  .resume {
     width: unset;
   }
 

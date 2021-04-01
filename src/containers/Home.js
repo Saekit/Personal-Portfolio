@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Home({ articles, projects }) {
   const classes = useStyles();
-  const articlesReversed = articles.reverse();
 
   return (
     <Container maxWidth="lg">
@@ -58,7 +57,7 @@ function Home({ articles, projects }) {
         </h1>
         <div className={classes.root}>
           <Grid container spacing={3}>
-            {articlesReversed.map((article) => (
+            {articles.map((article) => (
               <Blog key={article.id} article={article} />
             ))}
           </Grid>
