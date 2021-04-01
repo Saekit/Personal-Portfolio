@@ -5,7 +5,7 @@ import {
   faInstagram,
   faLinkedin,
   faGithub,
-  faMedium
+  faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
@@ -56,7 +56,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-c">
-        <p>© 2019 Raquel Randall</p>
+        <p>© 2021 Raquel Randall</p>
       </div>
     </footer>
   );

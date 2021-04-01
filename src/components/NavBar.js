@@ -126,14 +126,14 @@ function NavBar(props) {
           <li className="nav-item">
             <Link
               activeClass="active"
-              to="resume"
+              to="experience"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
               onClick={closeNav}
             >
-              Resume
+              Experience
             </Link>
           </li>
 

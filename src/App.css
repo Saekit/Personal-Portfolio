@@ -13,13 +13,14 @@ body {
   margin-bottom: -142px;
   position: relative;
   background: #cbb3c9;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .Content {
   margin: 70px 0px;
+}
+
+.section-title {
+  text-align: center;
 }
 
 /* Footer */
@@ -124,7 +125,7 @@ body {
   text-align: center;
 }
 .home-bio {
-  flex: 1;
+  margin: 0 auto;
   justify-content: center;
   font-weight: 500;
   width: 60%;
@@ -139,6 +140,7 @@ body {
 .name {
   font-size: 3rem;
   font-weight: 800;
+  text-align: center;
 }
 .name h1 {
   font-family: "Dancing Script", cursive;
@@ -150,6 +152,7 @@ body {
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
+  max-width: 1020px;
 }
 
 .about-container {
@@ -326,34 +329,24 @@ body {
 }
 
 /* Resume */
-.resume-container {
+.resume {
   display: flex;
   flex-direction: column;
-  width: 100%;
   font-weight: 500;
-}
-.resume {
   width: 80%;
   margin: auto;
-  text-align: justify;
   margin-bottom: 100px;
+  max-width: 1020px;
 }
 .resume li {
-  list-style-type: none;
+  list-style-type: circle;
 }
 .resume h2 {
   text-decoration: underline;
 }
 
 /* Blog */
-.blog-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-}
-.blogcard-container {
+.blogcard {
   height: 350px;
   padding: 15px;
   margin: 10px;
@@ -364,7 +357,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-.blogcard-container a {
+.blogcard a {
   text-decoration: none;
   color: #553300;
 }
@@ -456,7 +449,6 @@ body {
   }
   .home-bio {
     width: unset;
-    border-radius: unset;
   }
   .project-card {
     flex-direction: column;
@@ -497,14 +489,13 @@ body {
   .home-about {
     max-width: unset;
     width: unset;
-    border-radius: unset;
   }
 
   .about-tech {
     width: unset;
   }
 
-  .blogcard-container {
+  .blogcard {
     margin-bottom: 100px;
     padding: 20px;
   }
