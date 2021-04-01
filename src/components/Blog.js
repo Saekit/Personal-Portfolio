@@ -19,10 +19,6 @@ const useStyles = makeStyles({
 });
 
 function Blog(props) {
-  // componentDidMount() {
-  //   window.scrollTo(0, 0);
-  // }
-
   const { article } = props;
   const classes = useStyles();
 
@@ -47,13 +43,13 @@ function Blog(props) {
             </Typography>
           </CardContent>
         </CardActionArea>
-        {/* <CardActions>
-              <a target="_blank" rel="noopener noreferrer" href={article.link}>
-                <Button size="small" color="primary">
-                  Read More
-                </Button>
-              </a>
-            </CardActions> */}
+        <CardActions>
+          <a target="_blank" rel="noopener noreferrer" href={article.link}>
+            <Button size="small" color="primary">
+              Read More
+            </Button>
+          </a>
+        </CardActions>
       </Card>
     </Grid>
   );
