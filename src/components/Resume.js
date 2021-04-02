@@ -43,7 +43,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box p={3}>
-          <Typography style={{ maxWidth: 500 }}>{children}</Typography>
+          <Typography style={{ maxWidth: 750 }}>{children}</Typography>
         </Box>
       )}
     </div>
@@ -72,7 +72,6 @@ function useWidth() {
 const Resume = () => {
   const classes = useStyles();
   const width = useWidth();
-  // const size = useWindowSize();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -85,8 +84,6 @@ const Resume = () => {
   } else {
     condTabOrientation = "vertical";
   }
-
-  console.log(width);
 
   return (
     <div className="resume">
@@ -177,7 +174,7 @@ const Resume = () => {
           </ul>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <h3>HIES Inc.</h3>
+          <h3>HIES Inc., Kailua, HI</h3>
           <p>
             GIS, AutoCAD, Administrative Assistant, Summer Job 2008-2012, Mar
             2014 - May 2014
@@ -212,13 +209,13 @@ const Resume = () => {
           </ul>
         </TabPanel>
         <TabPanel value={value} index={5}>
-          <h4>Flatiron School - 2019</h4>
+          <h4>Flatiron School - New York, NY - 2019</h4>
           <p>
             Full Stack Web Development, JavaScript, Ruby on Rails, SQL, and
             React
           </p>
 
-          <h4>Hunter College - 2017</h4>
+          <h4>Hunter College - New York, NY - 2017</h4>
           <p>Health Sciences, Nutrition, Chemistry</p>
 
           <h4>Soka University of America - Aliso Viejo, CA - 2012</h4>

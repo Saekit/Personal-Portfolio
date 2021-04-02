@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsContainers from "./ProjectsContainers";
+import ProjectCard from "../components/ProjectCard";
 import About from "../components/About";
 import Blog from "../components/Blog";
 import Resume from "../components/Resume";
@@ -35,7 +35,11 @@ function Home({ articles, projects }) {
         <h1 className="section-title">
           <u>My Projects</u>
         </h1>
-        <ProjectsContainers projects={projects} />
+        <div className="project-container">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
       <div id="about">
         <h1 className="section-title">
