@@ -194,7 +194,7 @@ body {
 .about-tech {
   text-align: center;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 .about-tech ul {
@@ -440,8 +440,6 @@ body {
   .footer a {
     text-align: center;
     padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .footer li:last-of-type a {
     border-bottom: none;

@@ -53,7 +53,7 @@ class About extends React.Component {
         </div>
         <div className="about-tech">
           <h3>Technologies</h3>
-          <ul>
+          <ul style={{ padding: 0 }}>
             <li>JavaScript</li>
             <li>HTML5</li>
             <li>CSS3</li>

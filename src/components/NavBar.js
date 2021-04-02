@@ -15,8 +15,6 @@ import List from "@material-ui/core/List";
 
 library.add(faBars, faTimes);
 
-// need to remove react router
-
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#cbb3c9",
@@ -72,7 +70,9 @@ function NavBar(props) {
       return (
         <ul className="navbar">
           <li className="nav-item">
-            <LinkRouter to="/">Home</LinkRouter>
+            <LinkRouter to="/" onClick={closeNav}>
+              Home
+            </LinkRouter>
           </li>
         </ul>
       );
