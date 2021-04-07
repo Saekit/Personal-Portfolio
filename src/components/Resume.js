@@ -134,6 +134,10 @@ const Resume = () => {
               project to improve pharmacist productivity in regards to logging
               prior authorizations
             </li>
+            <li>
+              Reviewed pull requests in GitHub and mentored backend engineers
+              during frontend tasks and projects
+            </li>
           </ul>
         </TabPanel>
         <TabPanel value={value} index={1}>
