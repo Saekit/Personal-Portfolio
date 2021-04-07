@@ -1,19 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import { changeProject } from "../actions/projectActions";
-import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useInView } from "react-intersection-observer";
+import styled from "styled-components";
 
-class ProjectCard extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-  render() {
-    const { project } = this.props;
-    return (
-      <div
-        className="project-card"
-        onClick={() => this.props.changeProject(project)}
-      >
+function ProjectCard({ project }) {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  const dispatch = useDispatch();
+
+  return (
+    <div
+      ref={ref}
+      className="project-card"
+      onClick={() => dispatch(changeProject(project))}
+    >
+      <Div animate={inView}>
         <Link to="/projectinfo">
           <img
             className="preview-pic"
@@ -25,11 +31,13 @@ class ProjectCard extends Component {
             <div className="text">{project.project_name}</div>
           </div>
         </Link>
-      </div>
-    );
-  }
+      </Div>
+    </div>
+  );
 }
-export default connect(
-  null,
-  { changeProject }
-)(ProjectCard);
+export default ProjectCard;
+
+const Div = styled.div`
+  transform: translateX(${({ animate }) => (animate ? "0" : "-100vw")});
+  transition: transform 2s;
+`;
